@@ -1,0 +1,17 @@
+{
+  "name": "fintech-rerank-audit-service",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types src/risk_decision.test.ts",
+    "example": "node --experimental-strip-types src/rerank_example.ts"
+  },
+  "dependencies": {
+    "openai": "^4.104.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}
